@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/text.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "name": "xshl-text-def",
+  "name": "github-text-def",
   "version": "0.0.1",
   "title": "The Text",
   "description": "A represantion objects of TT",

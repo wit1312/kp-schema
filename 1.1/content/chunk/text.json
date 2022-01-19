@@ -2,7 +2,7 @@
   "id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/content/chunk/text.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A representation of text in paragraph",
-  "name": "xshl-text-def",
+  "name": "github-text-def",
   "version": "0.0.1",
   "type": "object",
   "required": ["content"],

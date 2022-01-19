@@ -1,7 +1,7 @@
 {
   "id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/content/chunk/quote.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "name": "xshl-quote",
+  "name": "github-quote",
   "version": "0.0.1",
   "description": "A represantion object of quote",
   "type": "object",

@@ -5,7 +5,7 @@
   "requirements": [
     {
       "spot": "src",
-      "base": "xshl-person",
+      "base": "github-person",
       "entity": ">=1.0.0"
     }
   ],

@@ -2,7 +2,7 @@
   "$id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/content/share/person.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Person",
-  "name": "xshl-person",
+  "name": "github-person",
   "version": "1.0.0",
   "description": "A person (alive, dead, undead, or fictional).",
   "type": "object",
