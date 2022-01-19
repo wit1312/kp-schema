@@ -1,27 +1,33 @@
 {
-    "$id": "https://www.xshl.org/schemas/1.1/content/share/person.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Person",
-    "name": "xshl-person",
-    "version": "1.0.0",
-    "description": "A person (alive, dead, undead, or fictional).",
-    "type": "object",
-    "required": [
-        "name"
-    ],
-    "additionalProperties": false,
-    "properties": {
-        "@context": {"$ref": "https://www.xshl.org/schemas/1.1/definitions/context.json"},
-        "name": {"$ref": "https://www.xshl.org/schemas/1.1/content/share/person/name.json"},
-        "gender": {
-            "id": "http://schema.org/gender",
-            "title": "gender",
-            "description": "Gender of the person.",
-            "type": "string",
-            "enum": ["female", "male"]
-        },
-        "nationality": {"type": "string"},
-        "birth": {"$ref": "https://www.xshl.org/schemas/1.1/definitions/event.json"},
-        "death": {"$ref": "https://www.xshl.org/schemas/1.1/definitions/event.json"}
+  "$id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/content/share/person.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Person",
+  "name": "xshl-person",
+  "version": "1.0.0",
+  "description": "A person (alive, dead, undead, or fictional).",
+  "type": "object",
+  "required": ["name"],
+  "additionalProperties": false,
+  "properties": {
+    "@context": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/context.json"
+    },
+    "name": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/content/share/person/name.json"
+    },
+    "gender": {
+      "id": "http://schema.org/gender",
+      "title": "gender",
+      "description": "Gender of the person.",
+      "type": "string",
+      "enum": ["female", "male"]
+    },
+    "nationality": { "type": "string" },
+    "birth": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/event.json"
+    },
+    "death": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/event.json"
     }
+  }
 }

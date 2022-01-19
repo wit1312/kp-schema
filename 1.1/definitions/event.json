@@ -1,69 +1,69 @@
 {
-    "$id": "https://www.xshl.org/schemas/1.1/definitions/event.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "name": "event",
-    "version": "0.0.2",
-    "title": "Event",
-    "description": "Event a thing that happens, especially one of importance.",
-    "type": "object",
-    "required": ["date"],
-    "additionalProperties": false,
-    "definitions": {
-        "language": {
-            "id": "#definitions/language",
-            "oneOf": [
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "ru": {
-                            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
-                        },
-                        "en": {
-                            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
-                        },
-                        "md": {
-                            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
-                        },
-                        "by": {
-                            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
-                        },
-                        "kg": {
-                            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
-                        },
-                        "kz": {
-                            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
-                        }
-                    }
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": ["@language", "@value"],
-                    "properties": {
-                        "@language": {
-                            "type": "string",
-                            "enum": ["ru", "en", "md", "by", "kg", "kz"]
-                        },
-                        "@value": {
-                            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    "properties": {
-        "date": {
-            "type": "string",
-            "format":  "date"
+  "$id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/event.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "event",
+  "version": "0.0.2",
+  "title": "Event",
+  "description": "Event a thing that happens, especially one of importance.",
+  "type": "object",
+  "required": ["date"],
+  "additionalProperties": false,
+  "definitions": {
+    "language": {
+      "id": "#definitions/language",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ru": {
+              "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+            },
+            "en": {
+              "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+            },
+            "md": {
+              "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+            },
+            "by": {
+              "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+            },
+            "kg": {
+              "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+            },
+            "kz": {
+              "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+            }
+          }
         },
-        "time": {
-            "type": "string",
-            "format":  "time"
-        },
-        "place": {
-            "$ref": "https://www.xshl.org/schemas/1.1/definitions/place.json"
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["@language", "@value"],
+          "properties": {
+            "@language": {
+              "type": "string",
+              "enum": ["ru", "en", "md", "by", "kg", "kz"]
+            },
+            "@value": {
+              "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+            }
+          }
         }
+      ]
     }
+  },
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "time": {
+      "type": "string",
+      "format": "time"
+    },
+    "place": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/place.json"
+    }
+  }
 }

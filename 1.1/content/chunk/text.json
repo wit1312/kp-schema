@@ -1,30 +1,36 @@
 {
-    "id": "https://www.xshl.org/schemas/1.1/content/chunk/text.json",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A representation of text in paragraph",
-    "name": "xshl-text-def",
-    "version": "0.0.1",
-    "type": "object",
-    "required": ["content"],
-    "properties": {
-        "@context": {"$ref": "https://www.xshl.org/schemas/1.1/definitions/context.json"},
-        "@type": {"$ref": "https://www.xshl.org/schemas/1.1/definitions/type.json"},
-        "@id": {"$ref": "https://www.xshl.org/schemas/1.1/definitions/id.json"},
-        "content": {
-            "oneOf": [
-                {
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://www.xshl.org/schemas/1.1/definitions/text.json"
-                    },
-                    "minItems": 2,
-                    "uniqueItems": true
-                },
-                {
-                    "$ref": "https://www.xshl.org/schemas/1.1/definitions/text.json"
-                }
-            ]
-        }
+  "id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/content/chunk/text.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A representation of text in paragraph",
+  "name": "xshl-text-def",
+  "version": "0.0.1",
+  "type": "object",
+  "required": ["content"],
+  "properties": {
+    "@context": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/context.json"
     },
-    "additionalProperties": false
+    "@type": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/type.json"
+    },
+    "@id": {
+      "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/id.json"
+    },
+    "content": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/text.json"
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        {
+          "$ref": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/definitions/text.json"
+        }
+      ]
+    }
+  },
+  "additionalProperties": false
 }

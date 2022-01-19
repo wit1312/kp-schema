@@ -1,37 +1,37 @@
 {
-    "id": "https://www.xshl.org/schemas/1.1/rpc/accounts/auth/email.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "RPC: Password Authentication Request",
-    "description": "Method request authentication token",
-    "type": "object",
-    "additionalProperties": false,
-    "required": ["kwargs"],
-    "properties": {
-        "kwargs": {
-            "type": "object",
-            "required": ["login", "password", "redirect", "client"],
-            "additionalProperties": false,
-            "properties": {
-                "login": {
-                    "type": "string",
-                    "format": "idn-email"
-                },
-                "password": {
-                    "type": "string",
-                    "minLength": 8,
-                    "format": "password",
-                    "title": "Password",
-                    "description": "Nueva contraseña."
-                },
-                "redirect": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "client": {
-                    "type": "string",
-                    "format": "uuid"
-                }
-            }
+  "id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/rpc/accounts/auth/email.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RPC: Password Authentication Request",
+  "description": "Method request authentication token",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["kwargs"],
+  "properties": {
+    "kwargs": {
+      "type": "object",
+      "required": ["login", "password", "redirect", "client"],
+      "additionalProperties": false,
+      "properties": {
+        "login": {
+          "type": "string",
+          "format": "idn-email"
+        },
+        "password": {
+          "type": "string",
+          "minLength": 8,
+          "format": "password",
+          "title": "Password",
+          "description": "Nueva contraseña."
+        },
+        "redirect": {
+          "type": "string",
+          "format": "uri"
+        },
+        "client": {
+          "type": "string",
+          "format": "uuid"
         }
+      }
     }
+  }
 }
