@@ -1,0 +1,21 @@
+{
+  "id": "https://raw.githubusercontent.com/wit1312/kp-schema/main/1.1/rpc/catcher-image.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "catcher-image",
+  "version": "1.0.0",
+  "title": "Catcher Image",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string" },
+    "catcher": { "type": "string" },
+    "content_type": { "type": "string" },
+    "md5": { "type": "string" },
+    "name": { "type": "string" },
+    "size": { "type": "number" },
+    "id": { "type": "string" },
+    "url": { "type": "string" },
+    "filter": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] }
+  }
+}
